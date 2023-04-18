@@ -210,5 +210,62 @@ echo '<hr><pre>' . $json . '</pre><hr>';
 
 ```
 
+<hr>
+
+<h4> Resultado:</h4>
+
+<hr>
+
+
+ Conexão realizada com Sucesso!
+ 
+ <hr>
+ 
+ Resultado da Tabela &gt;&gt; db-Teste-PDO
+
+ <hr>
+
+ <pre>
+ [
+    {
+        "id": "1",
+        "code": "BR",
+        "name": "Brasil"
+    },
+    {
+        "id": "2",
+        "code": "AR",
+        "name": "Argentina"
+    },
+    {
+        "id": "3",
+        "code": "UY",
+        "name": "Uruguay"
+    },
+    {
+        "id": "4",
+        "code": "CH",
+        "name": "Chile"
+    },
+    {
+        "id": "5",
+        "code": "PY",
+        "name": "Paraguay"
+    },
+    {
+        "id": "6",
+        "code": "PT",
+        "name": "Portugal"
+    },
+    {
+        "id": "7",
+        "code": "RU",
+        "name": "Russia"
+    }
+]
+
+</pre>
+
+<hr>
 
 <hr>
