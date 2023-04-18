@@ -58,8 +58,7 @@ services:
       - PMA_HOST=database
       - PMA_ABSOLUTE_URI=http://localhost:${MYADMIN_PORT}/
     depends_on:
-      database:
-        condition: service_healthy
+      - database
     volumes:
       - db_admin_data:/var/www/html
 
@@ -70,16 +69,17 @@ services:
     container_name: php_web
     ports:
       - '${WEB_PORT}:80'
-    working_dir: /var/www/html
+    working_dir: /var/www/
     volumes:
+      - .:/var/www/
       - ./public:/var/www/html
     depends_on:
-      database:
-        condition: service_healthy
+      - database
 
 volumes:
   db_data:
   db_admin_data:
+
 ```
 
 **Dockerfile** do **Apache** com a extensão **pdo pdo_mysql** estã em >> **`docker/Dockerfile`**
@@ -193,9 +193,9 @@ $tablename = "paises";
 try {
    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   echo "Conexão realizada com Sucesso!!!  :)";
+   echo  "Conexão realizada com Sucesso!!!  :) <hr> ";
 } catch (PDOException $e) {
-   echo "Conexão falhou! :( " . $e->getMessage();
+   echo "Conexão falhou! :( <hr> " . $e->getMessage();
 }
 
 // Conecta ao Banco de Dados PDO MySQL
@@ -207,6 +207,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $json = json_encode($results, JSON_PRETTY_PRINT);
 echo '<hr>Resultado da Tabela >> ' . $dbname;
 echo '<hr><pre>' . $json . '</pre><hr>';
+
 
 ```
 
