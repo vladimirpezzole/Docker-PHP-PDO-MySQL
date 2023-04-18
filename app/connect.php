@@ -10,9 +10,9 @@ $tablename = "paises";
 try {
    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   echo  "Conexão realizada com Sucesso!!!  :)";
+   echo  "Conexão realizada com Sucesso!!!  :) <hr> ";
 } catch (PDOException $e) {
-   echo "Conexão falhou! :( " . $e->getMessage();
+   echo "Conexão falhou! :( <hr> " . $e->getMessage();
 }
 
 // Conecta ao Banco de Dados PDO MySQL
