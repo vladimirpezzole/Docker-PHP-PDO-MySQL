@@ -1,4 +1,6 @@
-###Ambiente de Teste [ PHP + PDO MySQL + PHP MyADMIN ] com Docker
+### Ambiente de Teste [ PHP + PDO MySQL + PHP MyADMIN ] com Docker
+
+<hr>
 
 docker-compose.yml
 
@@ -22,6 +24,7 @@ xxxxxxxxxxxxx
 <hr>
 
 ###Banco de Dados via Terminal ou PHPMyAdmin
+
 Para acessar o **mysql-cli** via terminal **localmente** ou pelo **container** utilize os comandos:
 
 **Localmente** >> pela porta **9306**, (configurada anteriormente), digite no terminal:
