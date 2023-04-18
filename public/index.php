@@ -5,7 +5,7 @@
  <body>
  
  <?php 
- require_once "connect.php";
+ require_once "../app/connect.php";
  ?>
 
  </body>

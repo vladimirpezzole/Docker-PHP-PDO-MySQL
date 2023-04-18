@@ -1,4 +1,4 @@
-### Ambiente de Teste [ PHP Apache + PDO MySQL + PHP MyADMIN ] com Docker
+## Ambiente de Teste [ PHP Apache + PDO MySQL + PHP MyADMIN ] com Docker
 
 Ambiente **AMP** para teste com  **PDO MySQL** utilizando o **Docker Compose**.
 
